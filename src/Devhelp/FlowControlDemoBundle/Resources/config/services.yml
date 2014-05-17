@@ -1,0 +1,6 @@
+services:
+
+#    devhelp.flow_control_demo.listener.flow_control:
+#        class: Devhelp\FlowControlDemoBundle\EventListener\InvalidStepExceptionListener
+#        tags:
+#            - { name: kernel.event_subscriber }

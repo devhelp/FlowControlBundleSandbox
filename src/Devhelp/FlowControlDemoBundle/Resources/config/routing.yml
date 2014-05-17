@@ -1,0 +1,19 @@
+devhelp_flow_control_demo_simple_flow:
+    resource: "@DevhelpFlowControlDemoBundle/Controller/SimpleFlowController.php"
+    type: annotation
+
+devhelp_flow_control_demo_form_flow:
+    resource: "@DevhelpFlowControlDemoBundle/Controller/FormFlowController.php"
+    type: annotation
+
+devhelp_flow_control_demo_secure_flow:
+    resource: "@DevhelpFlowControlDemoBundle/Controller/SecureFlowController.php"
+    type: annotation
+
+devhelp_flow_control_demo_security:
+    resource: "@DevhelpFlowControlDemoBundle/Controller/SecurityController.php"
+    type: annotation
+
+devhelp_flow_control_demo_other:
+    resource: "@DevhelpFlowControlDemoBundle/Controller/SecureFlowController.php"
+    type: annotation

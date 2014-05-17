@@ -1,0 +1,4 @@
+devhelp_flow_control_demo:
+    resource: "@DevhelpFlowControlDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+

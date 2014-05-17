@@ -1,0 +1,13 @@
+{% extends 'DevhelpFlowControlDemoBundle::layout.html.twig' %}
+
+{% block content %}
+
+    {{ form_start(form, {action: path('form_2'), attr: {novalidate: 'novalidate'} }) }}
+
+        {{ form_widget(form) }}
+
+        <input type="submit" value="go to step 3">
+
+    {{ form_end(form) }}
+
+{% endblock %}

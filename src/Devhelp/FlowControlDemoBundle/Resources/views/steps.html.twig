@@ -1,0 +1,12 @@
+{% if steps %}
+    <h4>{{ label }}:</h4>
+    <ul>
+        {% for flow, step in steps %}
+            <li>
+                <p id="step-info">step '{{ step }}' of '{{ flow }}' flow</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h4>{{ empty }}</h4>
+{% endif %}

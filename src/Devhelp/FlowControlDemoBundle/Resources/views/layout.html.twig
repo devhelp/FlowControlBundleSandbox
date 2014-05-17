@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+    {#{{ render('DevhelpFlowControBundle:Flow:flows') }}#}
+
+    {{ render(controller('DevhelpFlowControlDemoBundle:Flow:previous')) }}
+
+    {% set steps = app.request.attributes.get('devhelp.flow_control.next_steps') %}
+
+    {% include 'DevhelpFlowControlDemoBundle::steps.html.twig' with {steps: steps, label: "this action moves to", empty: "this action does not belong to any flow"} %}
+
+    {% set steps = app.request.attributes.get('devhelp.flow_control.valid_steps') %}
+
+    {% include 'DevhelpFlowControlDemoBundle::steps.html.twig' with {steps: steps, label: "valid moves are", empty: "this action does not belong to any flow"} %}
+
+    {% block content %}{% endblock %}
+
+{% endblock %}
